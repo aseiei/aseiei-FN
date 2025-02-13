@@ -128,7 +128,7 @@
             document.getElementById('FormModalLabel').innerHTML = "แก้ไขข้อมูลแพทย์";
             document.getElementById('edit_type').value="update";
             document.getElementById('form_docter_id').style.display = "block";
-            fetch('https://bn-eiei.vercel.app/'+id)
+            fetch('https://bn-eiei.vercel.app/getDoctors'+id)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
